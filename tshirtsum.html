@@ -1,0 +1,85 @@
+<html>
+<title>
+    T Shirt's
+</title>
+<link rel="stylesheet" href="tshirtsum.css">
+
+<body>
+    <div id="header"></div>
+
+    <div id="page">
+        <div id="shirtBox">
+            <div id="shirtDisplay">
+                <img src="HTML Stuff Images/Defaultshirt.png" id="shirt">
+                <img src="HTML Stuff Images/Logo1.png" id="logo">
+            </div>
+        </div>
+
+        <div id="details">
+            <div id="productName">T Shirt's</div>
+            <div id="line"></div>
+            <div id="price">$30</div>
+
+            <div class="optionTitle">Shirt Colour</div>
+            <div id="colorMenu">
+                <div class="colorOption selectedOption" style="background-color: #ffffff;"
+                    onclick="document.getElementById('shirt').src = 'HTML Stuff Images/Defaultshirt.png'; pick('colorMenu', this)"></div>
+                <div class="colorOption" style="background-color: #3d9ed5;"
+                    onclick="document.getElementById('shirt').src = 'HTML Stuff Images/Blueshirt.png'; pick('colorMenu', this)"></div>
+                <div class="colorOption" style="background-color: #f4b438;"
+                    onclick="document.getElementById('shirt').src = 'HTML Stuff Images/Yellowshirt.png'; pick('colorMenu', this)"></div>
+                <div class="colorOption" style="background-color: #90593b;"
+                    onclick="document.getElementById('shirt').src = 'HTML Stuff Images/Brownshirt.png'; pick('colorMenu', this)"></div>
+                <div class="colorOption" style="background-color: #1e2430;"
+                    onclick="document.getElementById('shirt').src = 'HTML Stuff Images/Blackshirt.png'; pick('colorMenu', this)"></div>
+            </div>
+
+            <div class="optionTitle">Logo</div>
+            <div id="logoMenu">
+                <div class="logoOption selectedOption"
+                    onclick="document.getElementById('logo').src = 'HTML Stuff Images/Logo1.png'; pick('logoMenu', this)">
+                    <img src="HTML Stuff Images/Logo1.png">
+                </div>
+                <div class="logoOption"
+                    onclick="document.getElementById('logo').src = 'HTML Stuff Images/Logo2.png'; pick('logoMenu', this)">
+                    <img src="HTML Stuff Images/Logo2.png">
+                </div>
+                <div class="logoOption"
+                    onclick="document.getElementById('logo').src = 'HTML Stuff Images/Logo3.png'; pick('logoMenu', this)">
+                    <img src="HTML Stuff Images/Logo3.png">
+                </div>
+            </div>
+
+            <div class="optionTitle">Quantity</div>
+            <div id="quantityMenu">
+                <div class="quantityButton" onclick="changeQuantity(-1)">-</div>
+                <div id="quantityCount">1</div>
+                <div class="quantityButton" onclick="changeQuantity(1)">+</div>
+            </div>
+
+            <div id="purchase" onclick="alert('Thank you for your purchase!')">PURCHASE</div>
+        </div>
+    </div>
+
+    <script>
+        var quantity = 1;
+
+        function pick(menuId, button) {
+            var options = document.getElementById(menuId).children;
+            for (var i = 0; i < options.length; i++) {
+                options[i].classList.remove("selectedOption");
+            }
+            button.classList.add("selectedOption");
+        }
+
+        function changeQuantity(amount) {
+            quantity = quantity + amount;
+            if (quantity < 1) {
+                quantity = 1;
+            }
+            document.getElementById("quantityCount").innerHTML = quantity;
+        }
+    </script>
+</body>
+
+</html>

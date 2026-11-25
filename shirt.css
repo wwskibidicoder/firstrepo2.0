@@ -1,0 +1,650 @@
+@font-face {
+    font-family: Nunito-Medium;
+    src: url(Nunito-Medium.ttf);
+}
+
+@font-face {
+    font-family: Impact;
+    src: url(impact.ttf);
+}
+
+@font-face {
+    font-family: Impacted;
+    src: url(Impacted.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+
+
+
+
+#menuBarRectangle {
+    width: 101%;
+    height: 9%;
+    top: -1%;
+    left: -1%;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.triangle-down {
+    width: 100;
+    height: 0;
+    top: 0;
+    left: 45.3%;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 90px solid white;
+    position: fixed;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    box-shadow: 4px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    z-index: 11;
+}
+
+#webLogo {
+    width: 20%;
+    top: -5%;
+    left: 40.3%;
+    position: fixed;
+    z-index: 12;
+}
+
+#newArrivals {
+    width: 10%;
+    height: 5%;
+    top: 1.6%;
+    left: 10%;
+
+    font-family: Nunito-Medium;
+    z-index: 12;
+    background-color: white;
+    position: fixed;
+    border-radius: 20px;
+
+    line-height: 35.5px;
+    text-align: center;
+}
+
+#shop {
+    width: 10%;
+    height: 5%;
+    top: 1.6%;
+    left: 25%;
+
+    font-family: Nunito-Medium;
+    z-index: 12;
+    background-color: white;
+    position: fixed;
+    border-radius: 20px;
+
+    line-height: 35.5px;
+    text-align: center;
+}
+
+#QNA {
+    width: 10%;
+    height: 5%;
+    top: 1.6%;
+    left: 65%;
+
+    font-family: Nunito-Medium;
+    z-index: 12;
+    background-color: white;
+    position: fixed;
+    border-radius: 20px;
+
+    line-height: 35.5px;
+    text-align: center;
+}
+
+#shoppingCart {
+    top: -4%;
+    left: 90%;
+    width: 15%;
+    position: fixed;
+    z-index: 12;
+}
+
+#search {
+    top: -4%;
+    left: 85.5%;
+    width: 14%;
+    position: fixed;
+    z-index: 12;
+}
+
+
+
+
+#shirtDescription {
+    top: 15%;
+    left: 65%;
+    position: absolute;
+
+}
+
+#line {
+    width: 30%;
+    height: 1%;
+    top: 25%;
+    left: 65%;
+    background-color: black;
+    position: absolute;
+    z-index: 5;
+
+}
+
+#productNumber {
+    top: 27.5%;
+    left: 65%;
+    position: absolute;
+}
+
+
+/* #likeButton {
+    top: 15%;
+    left: 54%;
+    width: 36%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+
+} */
+
+#price {
+    top: 28%;
+    left: 85%;
+    font-size: 50px;
+    font-family: Nunito-Medium;
+    color: red;
+    z-index: 5;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+#Shirt {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    max-width: 1000px;
+    z-index: 5;
+}
+
+#shirtLogo {
+    position: absolute;
+    z-index: 6;
+
+    top: 26%;
+    left: 42.5%;
+
+    width: 6%;
+}
+
+
+
+
+
+
+
+
+
+
+/* #colorBox {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    background-color: white;
+    border: dashed black 10%;
+    border-radius: 20px;
+    z-index: 1;
+
+} */
+
+#changeShirtColor {
+    top: 28%;
+    left: 65%;
+
+    position: absolute;
+    z-index: 5;
+
+    font-size: 30px;
+    font-family: Nunito-Medium;
+    color: black;
+}
+
+#color1 {
+    top: 33%;
+    left: 65%;
+
+    width: 45px;
+    height: 45px;
+    background-color: #346146;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+
+}
+
+#color1:hover {
+    background-color: #447e5c;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#color1:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#color2 {
+    top: 33%;
+    left: 70%;
+
+    width: 45px;
+    height: 45px;
+    background-color: #2D5098;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+#color2:hover {
+    background-color: #3762b8;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#color2:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#color3 {
+    top: 33%;
+    left: 75%;
+
+    width: 45px;
+    height: 45px;
+    background-color: #00A4CC;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+#color3:hover {
+    background-color: #01c2f3;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#color3:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#buttonLogo1 {
+    top: 42.9%;
+    left: 64.9%;
+
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+#buttonLogo1:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#buttonLogo1:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#buttonLogo2 {
+    top: 42.9%;
+    left: 69.9%;
+
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+#buttonLogo2:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#buttonLogo2:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#buttonLogo3 {
+    top: 42.9%;
+    left: 74.9%;
+
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+#buttonLogo3:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#buttonLogo3:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+#logo_1 {
+    top: 43%;
+    left: 63.8%;
+    height: 45px;
+    position: absolute;
+    z-index: 4;
+}
+
+
+#logo_2 {
+    top: 43%;
+    left: 68.8%;
+    height: 45px;
+    position: absolute;
+    z-index: 4;
+}
+
+#logo_3 {
+    top: 43%;
+    left: 73.8%;
+
+    height: 45px;
+    position: absolute;
+    z-index: 4;
+}
+
+
+
+
+#plus {
+    top: 43%;
+    left: 93%;
+    z-index: 8;
+
+    width: 50px;
+    height: 50px;
+
+    /* background-color: white; */
+    border: 2px solid black;
+    position: absolute;
+}
+
+#plus:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#plus:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#minus {
+    top: 43%;
+    left: 82%;
+    z-index: 8;
+
+    width: 50px;
+    height: 50px;
+
+    /* background-color: white; */
+    border: 2px solid black;
+    position: absolute;
+}
+
+#minus:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#minus:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#count {
+    width: 107px;
+    height: 48px;
+    top: 43%;
+    left: 85.5%;
+    z-index: 5;
+    border: 3px solid black;
+    position: absolute;
+
+    line-height: 50px;
+    text-align: center;
+    font-size: 32px;
+
+}
+
+
+#addToCart {
+    position: absolute;
+    top: 52%;
+    left: 65%;
+    width: 32%;
+    z-index: 5;
+    padding: 12px 20px;
+
+
+    background-color: #d4a356;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+    font-family: 'Nunito-Medium', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+#addToCart #cart-icon {
+    height: 50px;
+    filter: brightness(0) invert(1);
+}
+
+
+
+#addToCart:hover {
+    background-color: #e0b46b;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#addToCart:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* --- Settings Widget --- */
+
+/* Main container for the widget, fixed to the bottom-left corner */
+#settings-widget {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 20;
+    /* Make sure it's on top of other elements */
+}
+
+/* The gear icon button */
+#settings-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    /* Makes it a circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+#settings-icon:hover {
+    transform: rotate(45deg);
+    /* Fun rotation effect on hover */
+}
+
+#settings-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+/* --- The Pop-up Menu --- */
+
+/* The menu is hidden by default */
+#settings-menu {
+    position: absolute;
+    bottom: 65px;
+    /* Position it above the gear icon */
+    left: 0;
+    width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+
+    /* Animation properties */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    /* Start slightly lower */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* This class will be added by JavaScript to show the menu */
+#settings-menu.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    /* Move to its final position */
+}
+
+#settings-menu h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+    text-align: center;
+}
+
+.swatch-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bg-swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.bg-swatch:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge swatch on hover */
+}
+
+/* end setting */
+
+
+#aiAssistant {
+    position: fixed;
+    right: 0%;
+    bottom: 1%;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    z-index: 1;
+}
+
+#shirtPoster {
+    width: 50%;
+    top: 100%;
+    left: 25%;
+    position: absolute;
+}
+
+#bottomLine {
+    width: 101%;
+    height: 1px;
+
+    top: 250%;
+    position: absolute;
+    background-color: black;
+}
+
+
+
+#colorFilter {
+    width: 101%;
+    height: 101%;
+    position: fixed;
+    z-index: -1;
+    background-color: white;
+    top: -1%;
+    left: -1%;
+    opacity: 1;
+}

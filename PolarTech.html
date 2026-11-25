@@ -1,0 +1,129 @@
+<html>
+<title>
+    Polar Tech
+</title>
+<link rel="stylesheet" href="shirt.css">
+
+<body>
+    <script>
+        var qty = 1;
+
+        if (qty < 0) {
+            qty = 0;
+            document.getElementById("quantity").innerHTML = qty;
+        }
+
+    </script>
+    <div id="newArrivals">
+        <span>
+            New Arrivals
+        </span>
+    </div>
+
+    <div id="shop">
+        <span>
+            shop
+        </span>
+    </div>
+
+    <div id="QNA">
+        <span>
+            Q & A
+        </span>
+    </div>
+
+    <div id="menuBarRectangle"></div>
+    <div class="triangle-down" id="topMenuTriangle"></div>
+    <img src="images/web.png" id="webLogo" onclick="alert('not sure yet')">
+    <img src="images/shoppingCart.png" id="shoppingCart">
+    <img src="images/search.png" id="search">
+    <img src="images/greenShirt.png" id="Shirt">
+    <img src="images/logo_2.webp" id="shirtLogo">
+    <span id="shirtDescription" style="font-family: Nunito-Medium; font-size: 60px;">
+        Daily Classic Tee
+    </span>
+    <div id="line"></div>
+    <span id="productNumber">
+        Product Number:888888
+    </span>
+
+    <!-- <img src="images/likeButton.png" id="likeButton"> -->
+
+    <span id="price">$589</span>
+
+    <div id="color1" onclick="document.getElementById('Shirt').src = 'images/greenShirt.png';"></div>
+    <div id="color2" onclick="document.getElementById('Shirt').src = 'images/blueShirt.png';"></div>
+    <div id="color3" onclick="document.getElementById('Shirt').src = 'images/lightBlueShirt.png';"></div>
+
+    <div id="buttonLogo1" onclick="document.getElementById('shirtLogo').src = 'images/logo_1.webp';"></div>
+    <div id="buttonLogo2" onclick="document.getElementById('shirtLogo').src = 'images/logo_2.webp';"></div>
+    <div id="buttonLogo3" onclick="document.getElementById('shirtLogo').src = 'images/logo_3.webp';"></div>
+
+    <img src="images/logo_1.webp" id="logo_1">
+    <img src="images/logo_2.webp" id="logo_2">
+    <img src="images/logo_3.webp" id="logo_3">
+
+    <img src="images/plus.png" id="plus" onclick="qty++;
+                                                  document.getElementById('quantity').innerHTML= qty" ;>
+    <img src="images/minus.png" id="minus" onclick="if (qty > 0) { qty--;
+                                                    document.getElementById('quantity').innerHTML= qty;}" ;>
+
+    <div id="count">
+        <span style="size: 70px;" id="quantity">
+            1
+        </span>
+    </div>
+
+    <button id="addToCart">
+        <img src="images/addToCartIcon.png" id="cart-icon">
+        <span>
+            ADD TO CART
+        </span>
+    </button>
+    <img src="images/addToCarted.png" id="addedToCart">
+
+
+    <div id="settings-widget">
+        <button id="settings-icon">
+            <img src="images/settings-icon.png" alt="Settings">
+        </button>
+
+        <div id="settings-menu">
+            <h4>Background Color</h4>
+            <div class="swatch-container">
+                <div class="bg-swatch" id="bg-white" style="background-color: #f0f0f0;"
+                    onclick="changeBgColor('#ffffff')"></div>
+                <div class="bg-swatch" id="bg-dark" style="background-color: #333333;"
+                    onclick="changeBgColor('#2d2d2d')"></div>
+                <div class="bg-swatch" id="bg-blue" style="background-color: #eaf2ff;"
+                    onclick="changeBgColor('#eaf2ff')"></div>
+            </div>
+        </div>
+    </div>
+
+    <img src="images/aiAssistant.webp" id="aiAssistant" onclick="alert('comming soon!')">
+    <div id="colorFilter"></div>
+
+    <img src="images/shirtPoster.png" id="shirtPoster">
+
+    <div id="bottomLine">
+    </div>
+
+    <!-- setting js -->
+    <script>
+        const settingsIcon = document.getElementById('settings-icon');
+        const settingsMenu = document.getElementById('settings-menu');
+        const colorFilterDiv = document.getElementById('colorFilter');
+
+        settingsIcon.addEventListener('click', () => {
+            settingsMenu.classList.toggle('visible');
+        });
+
+        function changeBgColor(color) {
+            colorFilterDiv.style.backgroundColor = color;
+        }
+    </script>
+    <!-- end setting js -->
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+    body{
+	background-color: black;
+}
+    #head {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+      position: absolute;
+      left: 45.8%;
+      top: 30%;
+      transform: scale(1.5);
+    }
+  
+    #leftear {
+      width: 200px;
+      height: 100px;
+      background: red;
+      border-radius: 100px / 50px;
+      position: absolute;
+      left: 35%;
+      top: 23%;
+      rotate: 50deg;
+            background-color: white;
+      outline-color: black;	
+    }
+    #innerleftear {
+      width: 200px;
+      height: 100px;
+      background: red;
+      border-radius: 100px / 50px;
+      position: absolute;
+      left: 35%;
+      top: 23%;
+      rotate: 50deg;
+            background-color: pink;
+      outline-color: black;	
+  transform: scale(0.7);
+    }
+    #rightear {
+      width: 200px;
+      height: 100px;
+      background: red;
+      border-radius: 100px / 50px;
+      position: absolute;
+      left: 50%;
+      top: 23%;
+      rotate: -50deg;
+            background-color: white;
+      outline-color: black;	
+    }
+    #innerrightear {
+      width: 200px;
+      height: 100px;
+      background: red;
+      border-radius: 100px / 50px;
+      position: absolute;
+      left: 50%;
+      top: 23%;
+      rotate: -50deg;
+            background-color: pink;
+      outline-color: black;	
+  transform: scale(0.7);
+    }
+
+    #lefteye{
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  transform: scale(0.2);
+  position: absolute;
+  top: 30%;
+  left: 44%;
+  background-color: black;
+}
+    #righteye{
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  transform: scale(0.2);
+  position: absolute;
+  top: 30%;
+  left: 47.5%;
+  background-color: black;
+}
+    #eggbody{
+      width: 200px;
+      height: 100px;
+      background: white;
+      border-radius: 100px / 50px;
+      rotate: 90deg;
+  position: absolute;
+  top: 43%;
+  left: 42%;
+  z-index: -1;
+    }
+    #lefthand {
+      width: 200px;
+      height: 100px;
+      background: grey;
+      outline-color: black;
+      outline-width: 2px;
+      border-radius: 100px / 50px;
+      transform: scale(0.3);
+       position: absolute;
+  top: 43%;
+  left: 40.5%;
+  rotate: 45deg;
+    }
+    #righthand {
+      width: 200px;
+      height: 100px;
+      background: grey;
+      outline-color: black;
+      outline-width: thick;
+      border-radius: 100px / 50px;
+      transform: scale(0.3);
+       position: absolute;
+  top: 43%;
+  left: 43.5%;
+  rotate: -45deg;
+    }
+    #leftfoot {
+      width: 200px;
+      height: 100px;
+      background: white;
+      outline-color: black;
+      outline-width: thick;
+      border-radius: 100px / 50px;
+      transform: scale(0.5);
+       position: absolute;
+  top: 55%;
+  left: 38.5%;
+  rotate: -45deg;
+    }
+    #rightfoot {
+      width: 200px;
+      height: 100px;
+      background: white;
+      outline-color: black;
+      outline-width: 2px;
+      border-radius: 100px / 50px;
+      transform: scale(0.5);
+       position: absolute;
+  top: 55%;
+  left: 45%;
+  rotate: 45deg;
+    }

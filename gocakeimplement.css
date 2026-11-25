@@ -1,0 +1,31 @@
+@font-face{ font-family: 'Gocake';     src: url("Gocake.otf"); }
+@font-face{ font-family: 'TypeMachine'; src: url("Type Machine.ttf"); }
+
+body{
+	background-color: greenyellow;
+	font-family: 'TypeMachine';
+	color: black;
+}
+
+#title{
+	font-family: 'Gocake';
+	font-size: 70px;
+}
+#subtitle{ font-size: 25px; }
+
+button{
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 8px 16px;
+}
+
+button:hover{ background-color: #ffd966; }
+
+#ohio{
+	font-size: 26px;
+	width: 70%;
+	background-color: white;
+	border-radius: 5px;
+}

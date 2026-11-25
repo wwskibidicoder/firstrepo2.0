@@ -1,0 +1,11 @@
+#fadebox{
+	width:101%;
+	height: 101%;
+	background-color: black;
+	position: fixed;
+	z-index: 90;
+	left: -1%;
+	top: -1%;
+	opacity:0.767;
+	position: fixed;
+}

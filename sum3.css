@@ -1,0 +1,180 @@
+body {
+  background-color: white;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#calc {
+  width: 410px;
+  margin: 30px auto;
+  border-radius: 50px;
+  position: relative;
+}
+
+.dropdown {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
+  left: 30px;
+  top: 30px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  min-width: 150px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.skinOption {
+  padding: 10px;
+}
+
+#display {
+  height: 80px;
+  margin-top: 70px;
+  text-align: right;
+  font-size: 65px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-size: 40px;
+  text-align: center;
+  line-height: 90px;
+}
+
+.num {
+  background-color: dimgray;
+}
+
+.top {
+  background-color: grey;
+}
+
+.op {
+  background-color: orange;
+}
+
+.wide {
+  width: 160px;
+  padding-left: 35px;
+  text-align: left;
+  border-radius: 45px;
+}
+
+.sign {
+  display: block;
+  width: 56px;
+  margin: 17px auto;
+}
+
+#backImg {
+  display: block;
+  width: 70px;
+  margin: 25px auto;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: whitesmoke;
+  color: black;
+}
+.light .num {
+  background-color: white;
+}
+.light .top {
+  background-color: lightgray;
+}
+.light .num img {
+  filter: brightness(0);
+}
+
+.veggie {
+  background-color: darkgreen;
+  color: white;
+}
+.veggie .num {
+  background-color: green;
+}
+.veggie .top {
+  background-color: chocolate;
+}
+.veggie .op {
+  background-color: darkorange;
+}
+
+.scary {
+  background-color: black;
+  color: red;
+}
+.scary .num {
+  background-color: maroon;
+}
+.scary .top {
+  background-color: darkred;
+}
+.scary .op {
+  background-color: red;
+}
+
+.hat{
+  position: absolute;
+  width: 40px;
+  top: -1000px;
+  pointer-events: none;
+  transition: all 1000ms ease;
+}
+
+#h1{ left: 25px;  transition-delay: 0ms; }
+#h2{ left: 130px; transition-delay: 100ms; }
+#h3{ left: 235px; transition-delay: 200ms; }
+#h4{ left: 25px;  transition-delay: 300ms; }
+#h5{ left: 130px; transition-delay: 400ms; }
+#h6{ left: 235px; transition-delay: 500ms; }
+#h7{ left: 25px;  transition-delay: 600ms; }
+#h8{ left: 130px; transition-delay: 700ms; }
+#h9{ left: 235px; transition-delay: 800ms; }
+
+.hats #h1{ top: 508px; }
+.hats #h2{ top: 508px; }
+.hats #h3{ top: 508px; }
+.hats #h4{ top: 403px; }
+.hats #h5{ top: 403px; }
+.hats #h6{ top: 403px; }
+.hats #h7{ top: 298px; }
+.hats #h8{ top: 298px; }
+.hats #h9{ top: 298px; }
+
+
+
+
+
+
+
+
+
+

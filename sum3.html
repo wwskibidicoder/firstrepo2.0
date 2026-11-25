@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>Wynn's Digital Calculator</title>
+  <link rel="stylesheet" href="sum3.css">
+</head>
+<body>
+
+<div id="calc" class="dark">
+
+  <div class="dropdown">
+    <button class="dropbtn">Themes</button>
+    <div class="dropdown-content">
+      <div class="skinOption" onclick="document.getElementById('calc').className='dark'">Dark Mode</div>
+      <div class="skinOption" onclick="document.getElementById('calc').className='light'">Light Mode</div>
+      <div class="skinOption" onclick="document.getElementById('calc').className='veggie'">Vegetables</div>
+      <div class="skinOption" onclick="document.getElementById('calc').className='scary'">Scary</div>
+      <div class="skinOption" onclick="document.body.className='hats'">Hats On</div>
+      <div class="skinOption" onclick="document.body.className=''">Hats Off</div>
+    </div>
+  </div>
+
+  <div id="display">0</div>
+
+  <div class="row">
+    <div class="btn top" onclick="total=Math.floor(total/10); display.innerHTML=total"><img src="HTML Stuff Images/delete.png" id="backImg"></div>
+    <div class="btn top" onclick="total=0; first=0; operator=''; display.innerHTML=total">AC</div>
+    <div class="btn top" onclick="total=total/100; display.innerHTML=total">%</div>
+    <div class="btn op" onclick="first=total; total=0; operator='/'"><img src="HTML Stuff Images/divide.png" class="sign"></div>
+  </div>
+
+  <div class="row">
+    <div class="btn num" onclick="total=total*10+7; display.innerHTML=total">7</div>
+    <div class="btn num" onclick="total=total*10+8; display.innerHTML=total">8</div>
+    <div class="btn num" onclick="total=total*10+9; display.innerHTML=total">9</div>
+    <div class="btn op" onclick="first=total; total=0; operator='*'"><img src="HTML Stuff Images/times.png" class="sign"></div>
+  </div>
+
+  <div class="row">
+    <div class="btn num" onclick="total=total*10+4; display.innerHTML=total">4</div>
+    <div class="btn num" onclick="total=total*10+5; display.innerHTML=total">5</div>
+    <div class="btn num" onclick="total=total*10+6; display.innerHTML=total">6</div>
+    <div class="btn op" onclick="first=total; total=0; operator='-'"><img src="HTML Stuff Images/minus.png" class="sign"></div>
+  </div>
+
+  <div class="row">
+    <div class="btn num" onclick="total=total*10+1; display.innerHTML=total">1</div>
+    <div class="btn num" onclick="total=total*10+2; display.innerHTML=total">2</div>
+    <div class="btn num" onclick="total=total*10+3; display.innerHTML=total">3</div>
+    <div class="btn op" onclick="first=total; total=0; operator='+'"><img src="HTML Stuff Images/plus.png" class="sign"></div>
+  </div>
+
+  <div class="row">
+    <div class="btn num" onclick="total=total*-1; display.innerHTML=total"><img src="HTML Stuff Images/switchplusminus.png" class="sign"></div>
+    <div class="btn num wide" onclick="total=total*10+0; display.innerHTML=total">0</div>
+    <div class="btn op" onclick="
+      if (operator=='+') { total=first+total }
+      if (operator=='-') { total=first-total }
+      if (operator=='*') { total=first*total }
+      if (operator=='/') { total=first/total }
+      operator='';
+      display.innerHTML=total
+    "><img src="HTML Stuff Images/equal.png" class="sign"></div>
+  </div>
+  <img src="HTML Stuff Images/hat.png" class="hat" id="h1">
+    <img src="HTML Stuff Images/hat.png" class="hat" id="h2">
+      <img src="HTML Stuff Images/hat.png" class="hat" id="h3">
+        <img src="HTML Stuff Images/hat.png" class="hat" id="h4">
+          <img src="HTML Stuff Images/hat.png" class="hat" id="h5">
+             <img src="HTML Stuff Images/hat.png" class="hat" id="h6">
+                 <img src="HTML Stuff Images/hat.png" class="hat" id="h7">
+                      <img src="HTML Stuff Images/hat.png" class="hat" id="h8">
+                           <img src="HTML Stuff Images/hat.png" class="hat" id="h9">
+
+</div>
+
+
+<script>
+var total = 0;
+var first = 0;
+var operator = "";
+var display = document.getElementById("display");
+</script>
+
+</body>
+</html>

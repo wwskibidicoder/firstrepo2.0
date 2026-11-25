@@ -1,0 +1,98 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	margin: 0;
+	background-color: #f3ae56;
+	overflow: hidden;
+}
+#page{
+	position: relative;
+	width: 100%; 
+	height: 100%;
+	z-index: 0;
+	background-color: white;
+	-webkit-transition: all 1000ms ease;
+	-moz-transition: all 1000ms ease;
+	-ms-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	transition: all 1000ms ease;
+}
+.pic{
+	position: absolute;
+	border: 0.2px solid ;
+	object-fit: cover;
+	-webkit-transition: all 1000ms ease;
+	-moz-transition: all 1000ms ease;
+	-ms-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	transition: all 1000ms ease;
+}
+
+.piccenter{
+	position: absolute;
+	border: 0.2px solid ;
+	object-fit: cover;
+	-webkit-transition: all 880ms ease;
+	-moz-transition: all 880ms ease;
+	-ms-transition: all 880ms ease;
+	-o-transition: all 880ms ease;
+	transition: all 880ms ease;
+}
+
+.lefttop{ top: 2.7%; left: 5.7%; width: 18.9%; height: 30.2%; }
+.leftcenter{ top: 35.6%; left: 5.7%; width: 18.9%; height: 30.2%; }
+.leftbottom{ top: 68.5%; left: 5.7%; width: 18.9%; height: 30.2%; }
+.centertop{ top: 2.7%; left: 30%; width: 40%; height: 13.7%; }
+.centercenter{ top: 19.1%; left: 30%; width: 40%; height: 54.2%; }
+.righttop{ top: 2.7%; left: 75.4%; width: 18.9%; height: 30.2%; }
+.rightlongcenter{ top: 35.6%; left: 75.4%; width: 18.9%; height: 63.1%; }
+
+
+.circle{
+	position: absolute;
+	top: 79.2%;
+	width: 70px;
+	height: 70px;
+	margin-left: -35px;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+.white{ left: 32%; background-color: white; }
+.yellow{ left: 41%; background-color: #fbe5a0; }
+.purple{ left: 50%; background-color: #624f9e; }
+.potato{ left: 59%; background-color: #f09c37; }
+.mix{ left: 68%; background-color: #bcd9b5; }
+
+.g2.up, .g3.up, .g4.up, .g5.up{ top: -100%; }
+.g2.down, .g3.down, .g4.down, .g5.down{ top: 120%; }
+.g2.leftward, .g3.leftward, .g4.leftward, .g5.leftward{ left: -100%; }
+
+#boxes{
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0;
+	-webkit-transition: all 1000ms ease;
+	-moz-transition: all 1000ms ease;
+	-ms-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	transition: all 1000ms ease;
+}
+.box{
+	position: absolute;
+	top: 0%;
+	width: 25%;
+	height: 100%;
+}
+#box1{ left: 0%; background-color: white; }
+#box2{ left: 25%; background-color: #f3ae56; }
+#box3{ left: 50%; background-color: #DB73FF; }
+#box4{ left: 75%; background-color: #FAEB93; }

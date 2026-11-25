@@ -1,0 +1,11 @@
+#menu, [id^="box67-"] {
+    border: 2px red solid;
+    width: 100%;
+    position: fixed;
+    left: 0;
+}
+
+#menu    { height: 10%; top: 0;   background-color: lightblue; z-index: 10; }
+#box67-1 { height: 30%; top: 10%; background-color: green; }
+#box67-2 { height: 30%; top: 40%; background-color: yellow; }
+#box67-3 { height: 30%; top: 70%; background-color: darkred; }
